@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+
+
+.navbar-inverse {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+/*  Auth system */
+
+.auth {
+  padding: 80px 0;
+  
+}
