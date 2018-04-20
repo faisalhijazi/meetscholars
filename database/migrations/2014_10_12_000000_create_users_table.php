@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
+use App\User;
 class CreateUsersTable extends Migration
 {
     /**
@@ -19,10 +19,18 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('role');
-            $table->integer('status');
+            $table->integer('status')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
+
+
+        User::create([
+          'name' => 'Scholar',
+          'email' => 'scholar@email.com',
+          'password' => bcrypt('120110220'),
+          'role' => '1',
+        ]);
     }
 
     /**
