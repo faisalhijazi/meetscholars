@@ -15,8 +15,10 @@
   border-color: #18bc9c;
 }
 
-.navbar-inverse .navbar-brand {
-  color: #fff;
+.navbar-default .navbar-brand>img {
+  height: 45px;
+  width: 45px;
+  margin-top: -12px;
 }
 
 .dropdown-menu>li>a {
