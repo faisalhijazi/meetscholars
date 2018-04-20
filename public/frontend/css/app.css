@@ -2,7 +2,7 @@
 
 
 
-.navbar-inverse {
+.navbar-default {
   margin-bottom: 0;
   border-radius: 0;
 }
@@ -12,9 +12,106 @@
   color: #fff;
 }
 
+.dropdown-menu>li>a {
+  padding: 10px 24px;
+}
 /*  Auth system */
 
 .auth {
   padding: 80px 0;
-  
+}
+
+.auth .card {
+  padding: 25px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.auth .card .card-header {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.auth .card .card-body {
+  padding: 50px;
+}
+
+
+/*  header  */
+
+header {
+  padding: 80px 0;
+}
+
+.ibox {
+  padding: 50px;
+  background-color: #e7ffcd;
+  color: #3a3a3al
+  border: 1px solid #abff4e;
+
+}
+
+
+
+/* profile */
+
+.profile {
+  padding: 80px 0;
+}
+.post {
+  display: inline-block;
+  background-color: #fafafa;
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  color: #3a3a3a;
+}
+
+.post:hover {
+  color: #3515d4;
+  text-decoration: none;
+}
+
+
+
+
+/* mentors  */
+
+.mentors {
+  padding: 80px 0;
+}
+.user {
+  display:block;
+  text-align: center;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  height: 280px;
+  margin-bottom: 30px;
+}
+.user:hover {
+  text-decoration: none;
+}
+.user i {
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  background-color: #3515d4;
+  color: #fff;
+  border-radius: 50%;
+  padding: 22px;
+  vertical-align: middle;
+}
+.user h3 {
+  color: #3515d4;
+  font-size: 15px;
+  font-weight: bold;
+}
+.user .rateing {
+  color: #e7711b;
+  font-size: 20px;
+}
+.user .rateing span:last-child {
+  color: #c5c5c5;
 }
