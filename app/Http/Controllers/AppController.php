@@ -19,7 +19,22 @@ class AppController extends Controller
 
 
     public function index() {
-      return view('index');
+      $mentors = User::where('role',1)->limit(4)->get();
+      return view('index',compact('mentors'));
+    }
+
+
+    public function search(Request $request)
+    {
+      $search = $request->get('search');
+      $country = $request->get('country');
+
+      if ($search OR $country) {
+        $results = About::where('about','like','%'.$search.'%')->get();
+        return view('scholarships.search', compact('search','country','results'));
+      }else {
+        return redirect('/');
+      }
     }
 
     /**
@@ -87,6 +102,37 @@ class AppController extends Controller
       return view('profile.index',compact('mentors'));
     }
 
+
+
+    public function scholarships() {
+      return  view('scholarships.index');
+    }
+
+
+    /**
+    *
+    * Booking
+    * @var id
+    * @return form
+    */
+
+
+    public function booking($id) {
+      $user = User::find($id);
+      return view('scholarships.create' , compact('user'));
+    }
+
+
+    /**
+    *
+    * Room for video call
+    *
+    * @return room
+    */
+
+    public function room() {
+      return view('scholarships.room');
+    }
 
 
 
