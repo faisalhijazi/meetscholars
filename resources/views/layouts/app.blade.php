@@ -30,7 +30,6 @@
       <div class="collapse navbar-collapse" id="ourNavbar">
         <ul class="nav navbar-nav">
           <li><a href="{{ url('/') }}">Home</a></li>
-          <li><a href="{{ url('/mentors')}}">Mentors</a></li>
           <li><a href="{{ url('/scholarships')}}">Featured Scholarships</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -49,6 +48,7 @@
               </ul>
             </li>
           @endif
+          <a href="{{ url('/mentors')}}" class="btn btn-success">Mentors</a>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
